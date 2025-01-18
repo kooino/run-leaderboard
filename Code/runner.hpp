@@ -1,13 +1,18 @@
+#pragma once
+
 #include <iostream>
 #include <string>
+#include <fstream>
 using namespace std;
 
 class Runner
 {
-    public:
-    float duration, distance;
+    private:
+    float duration;
+    float distance;
     string name;
 
+    public:
     void setInfo()
     {
         cout << "enter your name" << endl;
@@ -20,13 +25,35 @@ class Runner
         cin >> duration;
     }
 
+    string getName() const 
+    {
+        return name;
+    }
+
     float getDistance() const 
     {
         return distance;
     }
 
-    void displayInfo() const 
+    void save(ofstream& out) const
     {
-        cout << "Name: " << name << ", Distance: " << distance << ", Duration: " << duration << endl;
+        out << name << " " << distance << " " << duration << endl;
+    }
+
+    void load(ifstream& in)
+    {
+        in >> name >> distance >> duration;
+    }
+
+    friend std::istream& operator>>(std::istream& in, Runner& runner)
+    {
+        in >> runner.name >> runner.distance >> runner.duration;
+        return in;
+    }
+
+    friend std::ostream& operator<<(std::ostream& out, const Runner& runner)
+    {
+        out << runner.name << " " << runner.distance << " " << runner.duration;
+        return out;
     }
 };
