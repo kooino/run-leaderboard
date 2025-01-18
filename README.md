@@ -4,4 +4,15 @@ Back in november i had a bet with my friend that we had to run 15k until that mo
 
 The goal is to create a simple project where it is possible to input the runners name, distance of the run and the total time. The program will then calculate and create a leaderboard at any time and at the end of the month it shows the final leaderboard. 
 
-In my software engineering student program we have mainly used C++ and C, so i will be writing the code for this project in C++, also because its my most preferred language for the time being. 
+As a software engineering student I have mainly used C++ and C, so i will be writing the code for this project in C++, also because its my most preferred language for the time being.  
+
+  
+## Milestones:  
+~~ability to input values~~  
+~~calculate runners based on distance~~  
+~~display runners in leaderboard~~  
+saving values for future use  
+adding new data to runners  
+changing from console based to web based  
+monthly podium
+
