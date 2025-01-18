@@ -4,8 +4,6 @@
 #include "runner.hpp" 
 using namespace std;
 
-#pragma once
-
 class Leaderboard
 {
     private:

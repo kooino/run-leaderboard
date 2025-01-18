@@ -2,8 +2,6 @@
 #include <string>
 using namespace std;
 
-#pragma once
-
 class Runner
 {
     public:
