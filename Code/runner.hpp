@@ -14,7 +14,7 @@ class Runner
 
     public:
 
-    // function to enter info about runner
+    // function to enter runner info
     void setInfo()
     {
         cout << "enter your name" << endl;
