@@ -1,15 +1,14 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 #pragma once
 
-class runner
+class Runner
 {
     public:
     float duration, distance;
     string name;
-
-    pragma once;
 
     void setInfo()
     {
@@ -23,17 +22,13 @@ class runner
         cin >> duration;
     }
 
-    runner(string name, float distance, float duration)
-        name(runnerName), duration(runnerDistance), distance(runnerDistance){} 
+    float getDistance() const 
+    {
+        return distance;
+    }
 
-    string getName() const {return name;}
-    float getDistance() const {return distance;}
-    float getDuration() const {return duration;}
-
-    void setName (const string& newName) { name = newName; }
-    void setDistance (float newDistance) { distance = newDistance; }
-    void setDuration (float newDuration) { duration = newDuration; }
-
-
-    private:
+    void displayInfo() const 
+    {
+        cout << "Name: " << name << ", Distance: " << distance << ", Duration: " << duration << endl;
+    }
 };

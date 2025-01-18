@@ -1,4 +1,7 @@
 #include <iostream>
+#include <algorithm>
+#include <vector>
+#include "runner.hpp" 
 using namespace std;
 
 #pragma once
@@ -6,18 +9,18 @@ using namespace std;
 class Leaderboard
 {
     private:
-    vector <runner> runners;
+    vector <Runner> runners;
 
     public:
 
-    void addRunner(const Runner& runner)
+    void addRunner(const Runner& r) {}
     {
-        runners.push_back(runner);
+        runners.push_back(r);
     }
            
     void sortLeaderboard()
     {
-        sort(runners.begin()), runners.end(), [](const Runner& a, const Runner& b)
+        sort (runners.begin(), runners.end(), [](const Runner& a, const Runner& b)
         {
             return a.getDistance() >b.getDistance();
         });
@@ -27,7 +30,7 @@ class Leaderboard
     {
         for (const auto& runner : runners)
         {
-            cout << runner.getName() << " - " << runner.getDistance << " km" << endl;
+            cout << runner.getName() << " - " << runner.getDistance() << " km" << endl;
         }
     }
 
