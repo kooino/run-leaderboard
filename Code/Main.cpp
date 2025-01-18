@@ -4,13 +4,17 @@ using namespace std;
 
 int main() 
 {
-   cout << "enter your name" << endl;
-   cin >> name >> endl;
-   
-   cout << "enter distance of your run" << endl;
-   cin >> distance >> endl;
-   
-   cout << "enter duration of your run" << endl;
-   cin >> duration >> endl;
+    Leaderboard leaderboard;
+    
+    for()
+    {
+    runner.setInfo();
+
+    leaderboard.addRunner(runner);
+    leaderboard.sortLeaderboard();
+    leaderboard.display();
+    }
+    
+    return 0;
 }
 
