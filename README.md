@@ -9,9 +9,10 @@ As a software engineering student I have mainly used C++ and C, so i will be wri
   
 ## Milestones:  
 ~~ability to input values~~  
+~~calculate runners based on distance~~  
+~~display runners in leaderboard~~  
 saving values for future use  
 adding new data to runners  
-ranking runners in leaderboard  
 changing from console based to web based  
 monthly podium
 
