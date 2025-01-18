@@ -13,6 +13,8 @@ class Runner
     string name;
 
     public:
+
+    // function to enter info about runner
     void setInfo()
     {
         cout << "enter your name" << endl;
@@ -25,6 +27,7 @@ class Runner
         cin >> duration;
     }
 
+    // function to display info about runner
     string getName() const 
     {
         return name;
